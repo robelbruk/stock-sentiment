@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sentiment Result</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Input:</h2>
+            <p>{{ headline }}</p>
+
+            <h2>Sentiment:</h2>
+            <p><strong>{{ sentiment }}</strong></p>
+
+            <form action="/" method="get">
+                <button type="submit">🔁 Try Another</button>
+            </form>
+        </div>
+    </body>
+</html>
